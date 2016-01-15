@@ -9,8 +9,8 @@ argfile = str(sys.argv[1])
 # build savepoint path + file
 hashedHashtag = hashlib.md5(hashtag).hexdigest()
 last_id_filename = "last_id_hashtag_%s" % hashedHashtag
-##rt_bot_path = os.path.dirname(os.path.abspath(__file__))
-##last_id_file = os.path.join(rt_bot_path, last_id_filename)
+rt_bot_path = insert path to __file__(os.path.abspath(__file__))
+last_id_file = insert path to __file__(rt_bot_path, last_id_filename)
 
 #enter the corresponding information from your Twitter application:
 CONSUMER_KEY = '1234abcd...'#keep the quotes, replace this with your consumer key
