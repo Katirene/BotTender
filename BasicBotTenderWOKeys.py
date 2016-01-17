@@ -14,13 +14,11 @@ except:
   print('Error while searching')
 
 if results is not None:
-  print('Got {0} results'.format(results.count))
+  print(u'Got {0} results'.format(results.count))
 
   for tweet in results:
     try:
-      print('okay')
+      print(u'Found tweet id:{0}, from:\"{1}\", \n\t\"{2}\"\n'.format(tweet.id, tweet.user.name, tweet.text))
       #api.update_status("my Update", in_reply_to_status_id = user_id)
-    except:
-      print ("Error Tweeting")
-
-  time.sleep(900) 
+    except Exception as ex:
+      print ("Error Tweeting.  Error details: {0}".format(ex))
